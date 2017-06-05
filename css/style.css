@@ -1,0 +1,11 @@
+.container{
+        text-align: center;
+
+}
+.logo,.genrate{
+    text-align: center;
+    margin: 10px;
+}
+.logo img{
+    width: 500px;
+}
