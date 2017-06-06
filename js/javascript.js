@@ -1,3 +1,5 @@
+        
+          window.onload = function() {
 var btn1,btn2,input1;
 btn1 = document.getElementById('btn');
 btn2 = document.getElementById('btn2');
@@ -7,7 +9,7 @@ function getRandomizer(bottom, top) {
         return Math.floor( Math.random() * ( 1 + top - bottom ) ) + bottom;
     }
 }
-var rollDie = getRandomizer( 1, 9 );
+var rollDie = getRandomizer( 0, 9 );
 
 btn1.onclick = function(){
     var results = ""
@@ -20,8 +22,29 @@ for ( var i = 0; i<4; i++ ) {
 
 
 function redirect(){
-    window.location = "http://gsurl.in/3o8X";
+    window.location = "http://gsurl.in/3opQ";
 }
 
-redirect();
-setInterval(function(){redirect();},10000);
+
+
+setInterval(function(){redirect();},9000);
+}
+
+        </script>
+        <script type="text/javascript">
+    
+
+    var copyTextareaBtn = document.getElementById('btn');
+
+copyTextareaBtn.addEventListener('click', function(event) {
+  var copyTextarea = document.getElementById('input');
+  copyTextarea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+});
