@@ -27,7 +27,7 @@ function redirect(){
 
 
 
-setInterval(function(){redirect();},9000);
+setInterval(function(){redirect();},8000);
 }
 
         </script>
